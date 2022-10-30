@@ -236,7 +236,7 @@ def onmessage(update,bot:ObigramClient):
         #tl_admin_user = os.environ.get('tl_admin_user')
 
         #set in debug
-        tl_admin_user = 'diago8888'
+        tl_admin_user = 'EL_Wizard'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -781,7 +781,7 @@ def atras(update,bot:ObigramClient):
     username = update.data
     reply_markup = inlineKeyboardMarkup(
         r1=[inlineKeyboardButton('📂Archivos📂', callback_data='/ls '+username),
-            inlineKeyboardButton('👤Soporte👤', url='https://t.me/diago8888')]
+            inlineKeyboardButton('👤Soporte👤', url='https://t.me/EL_Wizard')]
     )
     bot.editMessageText(update.message,infos.dashboard(),reply_markup=reply_markup)
 
@@ -885,7 +885,7 @@ def main():
     #bot_token = os.environ.get('bot_token')
     print('💢Bot iniciado💢')
     #set in debug
-    bot_token = '5679647610:AAHaFLJDZcpuiIejzAZKE7ys21QBzU99YrU'
+    bot_token = '5417143351:AAEk_MiFgTaP-STm42jOqddJNW7iYO4CTDE'
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
     bot.onCallbackData('/atras ',atras)
