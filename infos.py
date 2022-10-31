@@ -35,7 +35,7 @@ def porcent(index,max):
 
 def createDownloading(filename,totalBits,currentBits,speed,time,tid=''):
      msg = 'Descargando Archivo ❤️🔸🔸🔸\n\n'
-    msg += 'ඞ Archivo: ' + filename + '\n'
+    msg += '📄Nombre: ' + filename + '\n'
     msg += text_progres(currentBits, totalBits) + '\n'
     msg += 'ඞ Porcentaje: ' + str(porcent(currentBits, totalBits)) + '%\n\n'
     msg += 'ඞ Total: ' + sizeof_fmt(totalBits) + '\n\n'
