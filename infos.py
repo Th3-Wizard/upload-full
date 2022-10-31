@@ -44,7 +44,7 @@ def createDownloading(filename,totalBits,currentBits,speed,time,tid=''):
     msg += 'ඞ Tiempo de Descarga: ' + str(datetime.timedelta(seconds=int(time))) + 's\n\n'
     return msg
 def createUploading(filename,totalBits,currentBits,speed,time,originalname=''):
-        msg = 'Subiendo A La Nube 🧡🔸🔸🔸\n\n'
+    msg = 'Subiendo A La Nube 🧡🔸🔸🔸\n\n'
     msg += 'ඞ Nombre: ' + filename + '\n'
     if originalname != '':
         msg = str(msg).replace(filename, originalname)
