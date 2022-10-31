@@ -438,7 +438,7 @@ def onmessage(update,bot:ObigramClient):
 
         # comandos de usuario
 
-        if '/ola' in msgText:
+        if '/mydata' in msgText:
             getUser = user_info
             if getUser:
                 statInfo = infos.createStat(username,getUser,jdb.is_admin(username))
