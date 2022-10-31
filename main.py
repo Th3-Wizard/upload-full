@@ -608,10 +608,10 @@ def onmessage(update,bot:ObigramClient):
                 bot.sendMessage(update.message.chat.id,'❌Error en el comando /cloud (moodle or cloud)❌')
             return
 
-        if '/activar_proxy' in msgText:
+        if '/proxy' in msgText:
             try:
                 cmd = str(msgText).split(' ',2)
-                proxy = os.environ.get('socks5://KFGKJGYFJDLGFGYJDGGFYEJHKDFFREDHLIDFLD')
+                proxy = cmd[1]
                 getUser = user_info
                 if getUser:
                     getUser['proxy'] = proxy
